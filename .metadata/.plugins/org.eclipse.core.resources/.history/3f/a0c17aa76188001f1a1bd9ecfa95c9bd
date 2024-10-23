@@ -1,0 +1,24 @@
+package com.banking.user;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+	
+	@Autowired
+	private UserService userService;
+	
+	@GetMapping("/")
+	public String first() {
+		return "welcome sahil";
+	}
+	
+	@GetMapping("/user")
+	public User createUser(@RequestBody UserModel usermodel ) {
+		return userService.createUser(usermodel);
+		
+	}
+}

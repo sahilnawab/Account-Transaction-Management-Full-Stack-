@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: BankingSystem
+  datasource:
+    url: jdbc:h2:file:D:/SAHIL/baanking database>
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enbled: true

@@ -1,0 +1,19 @@
+package com.banking.user;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+
+	@Autowired
+	private UserReposatory userReposatory;
+
+	public User createUser(UserModel usermodel) {
+			User user = new User(usermodel.getName(),usermodel.getEmail(),usermodel.getPassword())			
+			if(	userReposatory.save(user)!=null) 	return user;
+						else return null;
+	}
+	
+	
+}

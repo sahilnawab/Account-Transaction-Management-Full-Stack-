@@ -1,0 +1,6 @@
+spring.datasource.url= jdbc:mysql://sql6.freesqldatabase.com:3306/sql12737266
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sql12737266
+spring.datasource.password=zvgdnStFUT
+spring.h2.console.enabled=true 
+spring.jpa.hibernate.ddl-auto=update
